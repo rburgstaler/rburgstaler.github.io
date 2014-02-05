@@ -30,7 +30,7 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Compiling MingW based projects with Eclipse.</h3>
 
-<p>These instructions will show you how to setup Eclipse to a lot of the great things that can be expected from an IDE:</p>
+<p>These instructions will show you how to setup Eclipse to compile MingW c projects.  Specifically we will show how to compile Git for Windows with Eclipse using the MsysGit build environment.  The following will be possible once this is complete:</p>
 <ol>
 	<li>Compiling</li>
 	<li>Code Completion</li>
@@ -39,8 +39,24 @@
 	<li>Inpsect variables</li>
 </ol>
 
-<pre><code>$ samlpe.code for use once we get going
-</code></pre>
+<p>Just follow these steps:</p>
+
+<ol>
+	<li>Download and install the Eclipse IDE for C/C++ Developers from <a href="http://www.eclipse.org">eclipse.org</a><br />
+	    <span style="color: red">Note:</span> You may need to install the JDK in order to get Eclipse up and running</li>
+	<li>Clone the MsysGit build environment "recursively" from<br />
+	<pre><code>https://github.com/msysgit/msysgit.git</code></pre></li>
+	<li>Start up eclipse and choose a workspace path as it wishes.</li>
+	<li>Once in Eclipse go to Window -> Preferences -> General -> C/C++ -> Build -> Environment.  Choose to Add a new variable called PATH.  Add the two paths shown below seperated by a semi-colon as they would be in your environment.<br />
+	<pre><code>D:\Dev\msysgit\mingw\bin;D:\Dev\msysgit\bin</code></pre>
+	Also be sure that the "Append variable to native environmnet" is checked.
+	<img src="eclipse\enviromentalvariables.png" />
+	</li>
+	<li></li>
+
+</ol>
+
+
 
 
 

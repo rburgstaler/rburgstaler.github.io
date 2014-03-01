@@ -59,19 +59,24 @@
 	<li>Set the path to your existing code location.<br />
 	<img src="eclipse/newproject.png" />
 	</li>
+	<li>Go into the project properties.
+	</li>
+	<li>Under C/C++ Build -> Tool Chain Editor:<br />
+	Set the current builder to "Gnu Make Builder"<br />
+	<img src="eclipse/setbuilder.png" />
+	</li>
 
-	<li>Go into the project properties.<br />
+	<li>Under C/C++ Build -> Builder Settings:<br />
 	Uncheck "Use default build command".<br />
-	Set the build directory to "${ProjDirPath}.<br />
+	Uncheck "Generate Makefiles automatically".<br />
+	Set the build directory to "${ProjDirPath}\.<br />
 	<img src="eclipse/buildsettings.png" />
 	</li>
 	</li>
-	<li>Set build (Incremental build) to "install"<br />
+	<li>Under C/C++ Build -> Behaviour:<br />
+	Set build (Incremental build) to "install"<br />
 	<img src="eclipse/buildsettings2.png" />
 	</li>
-	</li>
-	<li>Set the current builder to "Gnu Make Builder"<br />
-	<img src="eclipse/setbuilder.png" />
 	</li>
 	<li>Try building and you should have success</li>
 

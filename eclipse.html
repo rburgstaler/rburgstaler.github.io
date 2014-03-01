@@ -49,10 +49,31 @@
 	<li>Start up eclipse and choose a workspace path as it wishes.</li>
 	<li>Once in Eclipse go to Window -> Preferences -> General -> C/C++ -> Build -> Environment.  Choose to Add a new variable called PATH.  Add the two paths shown below seperated by a semi-colon as they would be in your environment.<br />
 	<pre><code>D:\Dev\msysgit\mingw\bin;D:\Dev\msysgit\bin</code></pre>
-	Also be sure that the "Append variable to native environmnet" is checked.
-	<img src="eclipse\enviromentalvariables.png" />
+	Also be sure that the "Append variable to native environment" is checked.
+	<img src="eclipse/enviromentalvariables.png" />
 	</li>
-	<li>More to come!</li>
+
+	<li>Open up your existing project.<br />File -> New -> Makefile Project with Existing Code
+	</li>
+
+	<li>Set the path to your existing code location.<br />
+	<img src="eclipse/newproject.png" />
+	</li>
+
+	<li>Go into the project properties.<br />
+	Uncheck "Use default build command".<br />
+	Set the build directory to "${ProjDirPath}.<br />
+	<img src="eclipse/buildsettings.png" />
+	</li>
+	</li>
+	<li>Set build (Incremental build) to "install"<br />
+	<img src="eclipse/buildsettings2.png" />
+	</li>
+	</li>
+	<li>Set the current builder to "Gnu Make Builder"<br />
+	<img src="eclipse/setbuilder.png" />
+	</li>
+	<li>Try building and you should have success</li>
 
 </ol>
 
